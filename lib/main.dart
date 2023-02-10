@@ -141,7 +141,7 @@ class _MyAppState extends State<MyApp> {
       final dir = await getExternalStorageDirectory();
       final file = File('${dir?.path}/filename.pdf');
       await file.writeAsBytes(await pdf.save());
-      showPrintedMessage('success', 'saved to documents');
+      showPrintedMessage('Done', 'saved to documents');
     } catch (e) {
       showPrintedMessage('error', e.toString());
     }
